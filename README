@@ -1,0 +1,4 @@
+Silkroad For Linux Patcher
+This is a very simple application that will patch sro_client.exe and silkroad.exe to work with Wine 1.4.0+ on Linux. sro_client.exe and silkroad.exe check for 'TransmitFile' which has not been added to Wine yet and so this program will disable that check.
+
+I believe 'TransmitFile' may be used for uploading guild/union emblems and if so, you will crash while attempting to upload them.
