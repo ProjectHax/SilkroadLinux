@@ -29,7 +29,7 @@ void PatchEXE(const std::string & path)
 		std::fstream fs(path.c_str(), std::fstream::binary | std::fstream::out | std::fstream::in);
 		if(!fs.is_open())
 		{
-			std::cout << "\t" << "Could not open sro_client.exe for writing" << std::endl;
+			std::cout << "\t" << "could not open " << path << " for writing" << std::endl;
 			return;
 		}
 
@@ -42,7 +42,7 @@ void PatchEXE(const std::string & path)
 			{
 				uint32_t offset = what.position("data");
 
-				std::cout << "\t" << "Patch offset: " << (int64_t)offset << std::endl;
+				std::cout << "\t" << "patch offset: " << (int64_t)offset << std::endl;
 
 				fs.seekg(offset, std::ios::beg);
 				fs.write(&patch, 1);
