@@ -63,7 +63,7 @@ void PatchEXE(const std::string & path)
 
 		if(count == 0)
 		{
-			std::cout << "\t" << "No patches were made -- already patched or outdated regular expression" << std::endl;
+			std::cout << "\t" << "no patches were made -- already patched or outdated regular expression" << std::endl;
 		}
 		else
 		{
