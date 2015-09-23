@@ -23,11 +23,12 @@ Fedora
 ------
 1. `yum install git`
 
-Mac OSX
+Mac OS X
 -------
 1. Install homebrew [brew.sh](http://brew.sh)
 2. `brew update`
-3. `brew install git`
+3. `brew install python3`
+4. `brew install git`
 
 Patching
 ========
