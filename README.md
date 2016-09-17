@@ -1,12 +1,16 @@
 Silkroad For Linux Patcher
 ==========================
-This is a very simple application that will patch `sro_client.exe` and `silkroad.exe` to work with Wine 1.4.0+ on Linux & OSX. `sro_client.exe` and `silkroad.exe` check for `TransmitFile` which has not been added to Wine yet and so this program will disable that check.
+This is a very simple application that will patch `sro_client.exe` and `silkroad.exe` to work with Wine 1.4.0+ on Linux & OS X. `sro_client.exe` and `silkroad.exe` check for `TransmitFile` which has not been added to Wine yet and so this program will disable that check.
 
 - I believe `TransmitFile` may be used for uploading guild/union emblems and if so, you will crash while attempting to upload them.
 
 - The guides below will assume you already have Wine installed.
 
 - I have decided to rewrite the patcher in Python 3 since that is a lot easier to run instead of needing to install boost.
+
+Wine
+====
+The latest versions of Wine now have support for `TransmitFile`. This patcher is now irrelevent!
 
 Installation
 ============
@@ -41,4 +45,4 @@ Patching
 7. cd to your Silkroad directory
 8. `wine silkroad.exe` or run it through your file manager
 
-This will not bypass HackShield and the client will probably crash while loading it.
+This will not bypass HackShield/X-Trap and the client will probably crash while loading it.
